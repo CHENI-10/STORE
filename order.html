@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Parts</title>
+  <link rel="icon" href="./image01/logo.png">
+  <link rel="stylesheet" href="./styles/style01.css">
+  <link rel="stylesheet" href="./styles/style04.css" >
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <script src="./scripts/scripts.js"></script>
+  <script src="./order.js" defer> </script>
+  <script src="./favourites.js" defer> </script> 
+</head>
+
+<body>
+      <!--Header Section-->
+      <header>
+      <nav>
+      <!--Image Logo for Navigation Bar-->
+      <div class="logo">
+      <img src="./image01/logo.png" alt="Logo">
+      </div>
+      <!--Hamburger Menu Icon displayed for mobile/tablet views-->
+      <input type="checkbox" id="check">
+      <label for="check"> ☰ </label> 
+      <!--Main Navigation Bar-->
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="upcomimg_games.html">Upcoming Games</a></li>
+          <!--Hardware Dropdown-->
+          <li class="dropdown">
+              <input type="checkbox" id="hardware-toggle">
+              <label for="hardware-toggle" class="dropdown-label">Hardware ▾</label>
+              <ul class="dropdown-menu">
+                  <li><a href="consoles.html">Consoles</a></li>
+                  <li><a href="peripherals.html">Peripherals</a></li>
+              </ul>
+          </li>
+          <li><a href="games.html">Games</a></li>
+          <!--Shop Dropdown-->
+          <li class="dropdown">
+              <input type="checkbox" id="shop-toggle">
+              <label for="shop-toggle" class="dropdown-label active">Shop ▾</label>
+              <ul class="dropdown-menu">
+                  <li><a href="order.html">Add to Order</a></li>
+                  <li><a href="checkout.html">Checkout</a></li>
+              </ul>
+          </li>
+          <li><a href="FAQs.html">Help Center</a></li>
+      </ul>
+      </nav>
+  </header>
+
+  <h2><u>PC Components</u></h2>
+  
+  <!--Computer Parts-->
+  <div id="products-container"></div>
+
+  <h2><u>Order Summary</u></h2>
+  <table id="order-summary">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Subtotal</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3"><strong>Total</strong></td>
+        <td id="total-price" >Rs. 0.00</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <div class="actions">
+    <button onclick="buyNow()">Buy Now</button>
+    <button onclick="saveToFavourites()">Add to Favourites</button>
+    <button onclick="applyFavourites()">Apply Favourites</button>
+  </div>
+
+    <!--Footer Section-->
+    <footer class="gaming-footer">
+    <div class="footer-top">
+      
+    <!--Social Media Links-->
+    <div class="footer-social">
+    <h4>Follow Us!</h4>
+      <a href="https://instagram.com" target="_blank"><img src="./image01/insta_logo.webp" alt="Instagram Logo"></a>
+      <a href="https://facebook.com" target="_blank"><img src="./image01/fb_logo.webp" alt="Facebook Logo"></a>
+      <a href="https://youtube.com" target="_blank"><img src="./image01/utube_logo.webp" alt="YouTube Logo"></a>
+      <a href="https://business.whatsapp.com" target="_blank"><img src="./image01/whatsapp_logo.webp" alt="Whatsapp Business Logo"></a>
+    </div>
+  
+    <!--Subscription Form-->
+    <div class="footer-subscription">
+    <h4>Join the Adventure!</h4>
+      <p>Subscribe for the latest game releases, updates and exclusive content.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  
+    <!-- Quick Links -->
+    <div class="footer-links">
+    <h4>Quick Links!</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="upcomimg_games.html">Upcoming Games</a></li>
+          <li><a href="consoles.html">Consoles</a></li>
+          <li><a href="peripherals.html">Peripherals</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="order.html">Add to Order</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="FAQs.html">Help Center</a></li>
+        </ul>
+    </div>
+    </div>
+  
+    <hr>
+    
+    <!--Copyright and Legal Links-->
+    <div class="footer-copyright">
+      <p>&copy; 2025 EpicLootStore. All Rights Reserved. <br><br> | 
+      <a href="https://www.epicgames.com/site/en-US/privacypolicy" target="_blank"> Privacy Policy</a> | <a href="https://www.epicgames.com/site/en-US/tos" target="_blank"> Terms & Conditions</a> | </p>
+    </div>
+</footer>
+          
+</body>
+</html>
+    
+
+
+
+
+

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="icon" href="./image01/logo.png">
+  <link rel="stylesheet" href="./styles/style01.css">
+  <link rel="stylesheet" href="./styles/style03.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <script src="./scripts/scripts.js"></script>
+  <script src="./checkout.js" defer> </script>
+</head>
+
+<body>
+    <!--Header Section-->
+    <header>
+      <nav>
+      <!--Image Logo for Navigation Bar-->
+      <div class="logo">
+      <img src="./image01/logo.png" alt="Logo">
+      </div>
+      <!--Hamburger Menu Icon displayed for mobile/tablet views-->
+      <input type="checkbox" id="check">
+      <label for="check"> ☰ </label> 
+      <!--Main Navigation Bar-->
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="upcomimg_games.html">Upcoming Games</a></li>
+          <!--Hardware Dropdown-->
+          <li class="dropdown">
+              <input type="checkbox" id="hardware-toggle">
+              <label for="hardware-toggle" class="dropdown-label">Hardware ▾</label>
+              <ul class="dropdown-menu">
+                  <li><a href="consoles.html">Consoles</a></li>
+                  <li><a href="peripherals.html">Peripherals</a></li>
+              </ul>
+          </li>
+          <li><a href="games.html">Games</a></li>
+          <!--Shop Dropdown-->
+          <li class="dropdown">
+              <input type="checkbox" id="shop-toggle">
+              <label for="shop-toggle" class="dropdown-label active">Shop ▾</label>
+              <ul class="dropdown-menu">
+                  <li><a href="order.html">Add to Order</a></li>
+                  <li><a href="checkout.html">Checkout</a></li>
+              </ul>
+          </li>
+          <li><a href="FAQs.html">Help Center</a></li>
+      </ul>
+      </nav>
+  </header>
+        
+  <main class="checkout">
+  <h2><u>Checkout Details</u></h2>
+
+  <!--My Order-->
+  <div id="order-details"></div>
+  
+  <fieldset>
+  <legend>PERSONAL INFORMATION</legend> <br>
+  
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" required > <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required > <br><br>
+
+    <label for="number">Mobile Number:</label>
+    <input type="tel" id="number" required >
+  </fieldset>
+  <br><br>
+
+  <fieldset>
+  <legend>DELIVERY INFORMATION</legend> <br>
+    <label for="address">Address:</label>
+    <textarea id="address" required> </textarea> <br><br>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" required >
+  </fieldset>
+  <br><br>
+  
+  <fieldset>
+  <legend>PAYMENT INFORMATION</legend> <br>
+    <label for="card">Card Number:</label>
+    <input type="text" id="card" required > <br><br>
+
+    <label for="expiry">Expiry Date:</label>
+    <input type="month" id="expiry" required > <br><br>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" required > <br><br>
+  </fieldset>
+  <br><br>
+
+  <button type="submit"> Pay! </button>
+  </main>
+
+  
+  <!--Footer Section-->
+  <footer class="gaming-footer">
+  <div class="footer-top">
+      
+    <!--Social Media Links-->
+    <div class="footer-social">
+    <h4>Follow Us!</h4>
+      <a href="https://instagram.com" target="_blank"><img src="./image01/insta_logo.webp" alt="Instagram Logo"></a>
+      <a href="https://facebook.com" target="_blank"><img src="./image01/fb_logo.webp" alt="Facebook Logo"></a>
+      <a href="https://youtube.com" target="_blank"><img src="./image01/utube_logo.webp" alt="YouTube Logo"></a>
+      <a href="https://business.whatsapp.com" target="_blank"><img src="./image01/whatsapp_logo.webp" alt="Whatsapp Business Logo"></a>
+    </div>
+  
+    <!--Subscription Form-->
+    <div class="footer-subscription">
+    <h4>Join the Adventure!</h4>
+      <p>Subscribe for the latest game releases, updates and exclusive content.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  
+    <!-- Quick Links -->
+    <div class="footer-links">
+    <h4>Quick Links!</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="upcomimg_games.html">Upcoming Games</a></li>
+          <li><a href="consoles.html">Consoles</a></li>
+          <li><a href="peripherals.html">Peripherals</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="order.html">Add to Order</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="FAQs.html">Help Center</a></li>
+        </ul>
+    </div>
+  </div>
+  
+    <hr>
+    
+    <!--Copyright and Legal Links-->
+    <div class="footer-copyright">
+      <p>&copy; 2025 EpicLootStore. All Rights Reserved. <br><br> | 
+      <a href="https://www.epicgames.com/site/en-US/privacypolicy" target="_blank"> Privacy Policy</a> | <a href="https://www.epicgames.com/site/en-US/tos" target="_blank"> Terms & Conditions</a> | </p>
+    </div>
+  </footer>
+          
+</body>
+</html>
+    
+
+
+
+
+
+
+

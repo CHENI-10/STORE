@@ -1,0 +1,45 @@
+{
+    "pcComponents": {
+      "Processors": [
+        { "name": "INTEL CORE I9 13900K", "description": "24-core beast with high clock speeds for gaming & productivity.", "price": 215000, "currency": "Rs.", "image": "./image03/1. i9.webp" },
+        { "name": "AMD RYZEN 9 7950X", "description": "16-core powerhouse with high efficiency for multitasking.", "price": 205500, "currency": "Rs.", "image": "./image03/1. ryzen 9.webp" },
+        { "name": "INTEL CORE I7 13700K", "description": "Balanced performance for gaming & content creation.", "price": 147550, "currency": "Rs.", "image": "./image03/1. i7.webp" },
+        { "name": "AMD RYZEN 7 7800X3D", "description": "Optimized for gaming with 3D V-Cache technology.", "price": 161500, "currency": "Rs.", "image": "./image03/1. ryzen 7.webp" },
+        { "name": "APPLE M2 ULTA", "description": "Apple's fastest chip, great for creative professionals.", "price": 1299900, "currency": "Rs.", "image": "./image03/1. m2 apple.webp" },
+        { "name": "AMD THREADRIPPER PRO 5995WX", "description": "64-core CPU for heavy-duty tasks.", "price": 1900000, "currency": "Rs.", "image": "./image03/1. ryzen threadripper.webp" }
+      ],
+      "Graphic Cards": [
+        { "name": "AMD RADEON RX 7800 XT", "description": "Strong performance at a mid-range price.", "price": 432300, "currency": "Rs.","image": "./image03/2. rx 7800 xt.webp" },
+        { "name": "AMD RADEON RX 7900 XTX", "description": "Flagship RDNA 3 card for high-end gaming.", "price": 779200, "currency": "Rs.", "image": "./image03/2. rx 7900 xtx.webp" },
+        { "name": "NVIDIA GEFORCE RTX 4090", "description": "Ultimate 4K gaming and AI performance.", "price": 770000, "currency": "Rs.", "image": "./image03/2. rtx 4090.webp" },
+        { "name": "INTEL ARC A770", "description": "A solid choice for budget gaming & content creation.", "price": 160000, "currency": "Rs.", "image": "./image03/2. arc a770.webp" },
+        { "name": "NVIDIA RTX 4060 TI", "description": "Affordable and power-efficient for 1080p gaming.", "price": 193500, "currency": "Rs.", "image": "./image03/2. rtx 4060 ti.webp" },
+        { "name": "AMD RADEON RX 7600", "description": "Budget-friendly with great performance for the price", "price": 125000, "currency": "Rs.", "image": "./image03/2. rx 7600.webp" }
+      ],
+      "Motherboards": [
+        { "name": "ASUS ROG MAXIMUS Z790 HERO", "description": "High-end motherboard for Intel CPUs.", "price": 189000, "currency": "Rs.", "image": "./image03/3. z790 hero.webp" },
+        { "name": "MSI MAG B650 TOMAHAWK WIFI", "description": "Solid choice for AMD Ryzen 7000 series.", "price": 120000, "currency": "Rs.", "image": "./image03/3. b650 tomahawk.webp" },
+        { "name": "ASUS TUF GAMING X670E PLUS", "description": "Durable and feature-packed for gaming.", "price": 137000, "currency": "Rs.", "image": "./image03/3. x670e plus.webp" },
+        { "name": "GIGABYTE Z790 AORUS ELITE AX", "description": "Excellent overclocking & connectivity.", "price": 148500, "currency": "Rs.", "image": "./image03/3. z790 elite.webp" },
+        { "name": "ASROCK B550 STEEL LEGEND", "description": "Reliable and affordable for AMD Ryzen builds.", "price": 61000, "currency": "Rs.", "image": "./image03/3. b550 steel.webp" },
+        { "name": "ASUS PRIME H610M E D4", "description": "Entry-level board with solid essentials.", "price": 37800, "currency": "Rs.", "image": "./image03/3. prime h610m.webp" }
+      ],
+      "Memory": [
+        { "name": "CORSAIR VENGEANCE RGB DDR5 32GB", "description": "Fast, stylish and ideal for gaming.", "price": 39000, "currency": "Rs.", "image": "./image03/4. vengeance ddr5.webp" },
+        { "name": "KINGSTON FURY BEAST DDR4 16GB", "description": "Affordable and reliable RAM.", "price": 10900, "currency": "Rs.", "image": "./image03/4. ddr4 beast.webp" },
+        { "name": "G.SKILL TRIDENT Z5 RGB 64GB DDR5", "description": "High-performance with RGB flair.", "price": 75000, "currency": "Rs.", "image": "./image03/4. ddr5 trident.webp" },
+        { "name": "PATRIOT VIPER STEEL DDR4 16GB", "description": "Budget-friendly but high-performing.", "price": 10900, "currency": "Rs.","image": "./image03/4. viper ddr4.webp" },
+        { "name": "CRUCIAL PRO DDR5 32GB", "description": "High-speed DDR5 memory for modern PCs.", "price": 34800, "currency": "Rs.", "image": "./image03/4. crucial pro.webp" },
+        { "name": "TEAMGROUP T FORCE DELTA RGB 32GB DDR4", "description": "Stylish and powerful.", "price": 16950, "currency": "Rs.", "image": "./image03/4. delta ddr4.webp" }
+      ],
+      "Storage Devices": [
+        { "name": "WD BLUE SN570 1TB NVME SSD", "description": "Budget-friendly and efficient.", "price": 18900, "currency": "Rs.", "image": "./image03/5. wd ssd.webp" },
+        { "name": "SEAGATE BARRACUDA 4TB HDD", "description": "Traditional HDD with ample space.", "price": 39500, "currency": "Rs.", "image": "./image03/5. seagate hdd.webp" },
+        { "name": "SAMSUNG 870 EVO 2TB SATA SSD", "description": "Reliable SATA SSD for storage needs.", "price": 57500, "currency": "Rs.", "image": "./image03/5. 870 evo ssd.webp" },
+        { "name": "CRUCIAL P5 PLUS 1TB NVME SSD", "description": "Great performance at a reasonable price.", "price": 24000, "currency": "Rs.", "image": "./image03/5. crucial ssd.webp" },
+        { "name": "KINGSTON KC3000 1TB NVME SSD", "description": "Reliable, fast and affordable.", "price": 33000, "currency": "Rs.", "image": "./image03/5. kingston.webp" },
+        { "name": "SAMSUNG 990 PRO 2TB MVME SSD", "description": "Ultra-fast PCIe 4.0 storage.", "price": 55000, "currency": "Rs.", "image": "./image03/5. samsung ssd.webp" }
+      ]
+    }
+}
+  

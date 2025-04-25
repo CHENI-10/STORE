@@ -1,0 +1,1031 @@
+body{background-color: black;}
+
+
+/* HOME PAGE STYLING */
+
+/* Hero banner */
+.home .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../image01/heroimage.webp"); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  padding:0px;
+  margin: auto auto;
+}
+
+.home .hero {
+  height: 300px;
+}
+
+.home .hero h1 {
+  font-size: 30px;
+  position: relative;
+  top: calc(25% - 10px); 
+  transition: all 0.3s ease;
+  color: gold; 
+}
+
+.home .hero h1:hover {
+  color: cyan; 
+}
+
+.home .hero p {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  
+  font-size: 16px;
+  color:#ffffff;
+  background: rgba(0, 0, 0, 0.6); 
+}
+
+/* Media queries for tablet view */
+@media (min-width: 600px) {
+  .home .hero {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .home .hero h1 {
+    font-size: 32px;
+  }
+  .home .hero p {
+    font-size: 18px;
+
+  }
+}
+
+/* Media queries for desktop view */
+@media (min-width: 768px) {
+  .home .hero {
+    height: 500px; 
+  }
+  .home .hero h1 {
+    font-size: 60px;
+    position: relative;
+    top: calc(20% - 5px); 
+  }
+  .home .hero p {
+    margin-top: 10px;
+    font-size: 22px;
+  }
+}
+
+/* Three sub-sections */
+.home .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home .content-section {
+  margin-top: 20px;
+  background-color: lavender;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home .content-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.home .image-and-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.home .image-and-text img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.home .text-content {
+  font-size: 1rem;
+  color: #555;
+  text-align: justify;
+}
+
+/* Media queries for tablet and desktop views */
+@media (min-width: 768px) {
+  .home .container {
+    margin-top: 35px;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .home .content-section {
+      flex: 1;
+      margin: 0 10px;
+  }
+
+  .home .content-section h2 {
+      font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home .container {
+      gap: 24px;
+  }
+
+  .home .content-section {
+      padding: 20px;
+  }
+
+  .home .text-content {
+      font-size: 1.125rem;
+  }
+
+}
+
+/* Bullet point list and numbered list */
+.container_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.container_list div {
+  margin: 10px 0;
+}
+
+.home h3 {
+  font-size: 18px;
+  text-align: center;
+  color:greenyellow;
+}
+
+ul, ol {
+  color:#ccc;
+  list-style-position: inside;
+  padding-left: 20px;
+  margin: 10px 0; 
+}
+
+ul li, ol li {
+  margin-bottom: 8px; 
+}
+
+.home img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-height: 300px; 
+  object-fit: contain; 
+}
+
+/* Media queries for tablet and desktop views */
+@media (min-width: 768px) {
+  .container_list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container_list div {
+    margin: 0 20px;
+    width: 30%;
+  }
+
+  .home h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  ul, ol {
+    padding-left: 20px;
+    margin: 10px 0; 
+  }
+
+  ul li, ol li {
+    margin-bottom: 12px;
+  }
+
+  .home img {
+    max-width: 200px; 
+    height: auto;
+  }
+}
+
+
+/* ABOUT US PAGE STYLING */
+
+.about h2 {
+  text-align: center;
+  padding: 20px;
+  color: rgb(93, 130, 232);
+  margin-top: 10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* About each store locations */
+.about .stores {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15px;
+}
+
+.about .branch {
+  border: 5px solid rgb(9, 177, 215);
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about .branch-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about h3 {
+  text-align: left;
+  color: rgb(249, 2, 2);
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.about p {
+  margin: 2px 0;
+}
+
+.about strong {
+  font-weight: bold;
+}
+
+.about img {
+  width: 100%;
+  height: 300px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* Image map styling */
+.about iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Media queries for tablet and larger screen size view */
+@media (min-width: 768px) {
+  .about .stores {
+      flex-direction: row; 
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .about .branch {
+      display: flex;
+      flex-direction: row; 
+      justify-content: flex-start;
+      align-items: flex-start;
+  }
+
+  .about .branch-content {
+      width: 60%;
+  }
+
+  .about iframe {
+      width: 40%; 
+      margin-top: 0;
+  }
+
+  .about img {
+      margin: 20px 10px;
+      width: 500px;
+      height: 300px;
+  }
+}
+
+/* Further media queries for desktop (larger screen) view */
+@media (min-width: 1024px) {
+  .about iframe {
+      height: 400px; 
+  }
+}
+
+
+/* Store summary for the mobile shown as cards */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.card {
+  background-color: rgb(241, 224, 125);
+  padding: 20px;
+  border: 3px solid #a81d1d;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 0 0 10px;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+.footer-message {
+  display: block;
+  color:rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Store summary for larger tablet and desktop view shown as summary table */
+.summary-table {
+  display: none;
+  width: 100%;
+  border-collapse: collapse;
+  padding: 20px;
+}
+.summary-table tbody{
+  color: white;
+}
+.summary-table th , 
+.summary-table tfoot{
+  color: black;
+  font-size: large;
+  font-weight: bold;
+}
+.summary-table th,
+.summary-table td {
+  padding: 12px;
+  text-align: center;
+  border: 2.5px solid rgb(196, 120, 48);
+}
+.summary-table th , .summary-table tfoot {
+  background-color: rgb(218, 210, 99);
+}
+
+/* Media queries for tablet and desktop view */
+@media screen and (min-width: 768px) {
+  .card-container {
+      display: none;
+  }
+  .summary-table {
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  .footer-message {
+      display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-container {
+      display: none;
+  }
+  .summary-table {
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5px;
+      margin-bottom: 30px;
+  }
+  .footer-message {
+      display: none;
+  }
+}
+
+
+/* UPCOMING GAMES PAGE STYLING */
+
+.upgames h2 {
+  text-align: center;
+  padding: 20px;
+  color:  rgb(229, 255, 0);
+  margin-top: 10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.upgames p{
+  margin-left: 10px;
+  margin-right: 10px;
+   color:#f7f7f7e7;
+   text-align: center;
+   margin-bottom: 20px;
+   margin-top: 10px;
+}
+
+.video-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto; 
+}
+
+.video-container video {
+  width: 100%;
+  height: auto; 
+  display: block; 
+}
+
+/* Media queries for tablet and desktop view */
+@media (min-width: 768px) {
+  .video-container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .video-container{
+    max-width: 100%;
+    max-height: 50%;
+  }
+}
+
+/* Upcoming games list */
+
+.upgames .container {
+  padding: 16px;
+}
+
+.upgame-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50PX;
+  margin-bottom: 30px;
+}
+
+.upgame-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.upgame-item:hover {
+  transform: scale(1.05);
+}
+
+.upgame-image {
+  width: 100%;
+  border-bottom: 2px solid white;
+}
+
+.release-date {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  width: 100%;
+}
+
+/* Mobile first design */
+@media (max-width: 767px) {
+  .release-date {
+    display: block;
+    font-weight: bold;
+  }
+}
+
+/* Media queries for tablet view */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .release-date {
+    display: block;
+  }
+}
+
+/* Media queries for desktop view */
+@media (min-width: 1024px) {
+  .release-date {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color:white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    width: 100%;
+    transition: opacity 0.3s ease;
+  }
+
+  .upgame-item {
+    position: relative;
+  }
+
+  .upgame-item:hover .release-date {
+    display: block;
+    opacity: 1;
+  }
+}
+
+
+/* GAMING CONSOLES AND GAMING PERIPHERALS PAGE STYLING */
+
+body .consoles, body .peripherals {
+  margin: 0; 
+  padding: 0;
+  background-image: url("../image01/gaming2.webp"); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  height: 100%; 
+  width: 100%; 
+}
+ .peripherals h2 {
+  text-align: center;
+  padding: 20px;
+  color: rgb(229, 255, 0);
+  margin-top: 10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.consoles h2 {
+  text-align: center;
+  padding: 20px;
+  color: aqua;
+  margin-top: 10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.console-grid, .peripheral-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.console-item, .peripheral-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.console-item img, .peripheral-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.console-description, .peripheral-description {
+  margin-top: 0px;
+  padding: 15px;
+  color: #555;
+  font-size: 14.5px;
+  line-height: 1.5;
+  position: relative;
+  margin-bottom: 40px; 
+}
+
+.console-description p, .peripheral-description p {
+  margin: 0 0 10px;
+}
+
+.console-price, .peripheral-price {
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #ddd;
+  opacity: 0; 
+  transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+.console-item:hover .console-price, .peripheral-item:hover .peripheral-price {
+  opacity: 1; 
+  bottom: 0; 
+}
+
+/* Media queries to show the price when hovered over the image on desktop */
+@media (min-width: 768px) {
+  .console-item, .peripheral-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .console-item:hover, .peripheral-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .console-item:hover .console-description, .peripheral-item:hover .peripheral-description {
+    margin-bottom: 40px; 
+  }
+
+  .console-price, .peripheral-price {
+    display: block; 
+  }
+}
+
+/* Grid layout for larger screens */
+@media (min-width: 600px) {
+  .console-grid, .peripheral-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Media queries to ensure that price is always visible on mobile and tablet */
+@media (max-width: 768px) {
+  .console-item, .peripheral-item {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .console-price, .peripheral-price {
+    opacity: 1; 
+    bottom: 0; 
+    margin-top: 10px; 
+  }
+
+  .console-description, .peripheral-description {
+    margin-bottom: 20px; 
+  }
+}
+
+
+/* GAMES PAGE STYLING */
+
+body .games {
+  margin: 0; 
+  padding: 0;
+  background-image: url("../image01/image.webp"); 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+  height: 100%; 
+  width: 100%; 
+}
+
+.games h2 {
+  text-align: center;
+  padding: 20px;
+  color: rgb(4, 254, 254);
+  margin-top: 10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.game-card h2 {
+  text-align: center;
+  padding: 20px;
+  color:red ;
+  margin-top: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.game-card p {
+  text-align: justify;
+  color:white;
+}
+
+.game-card p strong {
+  line-height: 2.5;
+}
+
+.gaming-page {
+  padding: 10px;
+}
+
+.game-card {
+  display: flex;
+  align-items: center;
+  background-color:black;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative; 
+}
+
+.game-image {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.game-details {
+  flex: 1;
+}
+
+.game-name {
+  text-align: center;
+  font-size: 20px;
+  margin: 5px;
+}
+.game-name h2 {
+  color: #007BFF;
+}
+
+.game-description {
+  font-size: 15px;
+  margin: 5px 0;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.8s ease, max-height 0.3s ease;
+}
+
+/* Media queries to ensure that the description is always visible on mobile and tablet view */
+@media (max-width: 1024px) {
+  .game-card {
+    flex-direction: column; 
+    align-items: flex-start; 
+    text-align: center; 
+  }
+
+  .game-image {
+    margin: 0 auto 10px; 
+  }
+  .game-details {
+    text-align: justify;
+  }
+  .game-description {
+    opacity: 1;
+    max-height: none;
+  }
+}
+
+/* Media quereis for desktop , the description will be shown when hovered over the game card */
+@media (min-width: 1024px) {
+  .game-card {
+    flex-direction: row;
+  }
+  .game-details, .game-description{
+    font-size: 15.5px;
+  }
+  .game-description {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  .game-card:hover .game-description {
+    opacity: 1;
+    max-height: 100px; 
+  }
+}
+
+
+/* FAQS AND QUERIES PAGE STYLING  */
+
+body .faqs {
+  margin: 0; 
+  padding: 0; 
+  background-image: url("../image01/image2.webp");
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  height: 100%; 
+  width: 100%; 
+}
+.faq-section {
+  padding: 25px;
+  background-color:black;
+  border: 8px solid rgb(130, 16, 16);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  margin: auto auto;
+}
+.faq-section h2 {
+  text-align: center;
+  font-size: 24px;
+  color: gold;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  border-bottom: 1px solid red;
+  padding: 10px 0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+/* FAQs question section */
+.faq-question {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+  color: red;
+}
+
+/* FAQs answer section */
+.faq-answer {
+  display: none;
+  margin-top: 8px;
+  font-size: 14px;
+  color: orange;
+  line-height: 1.4;
+  padding-left: 15px;
+}
+
+/* Toggle (used to display the answers when clicked over the questions) */
+.faq-toggle {
+  display: none;
+}
+
+.faq-toggle:checked + .faq-question + .faq-answer {
+  display: block;
+}
+
+/* Media queries for tablet view */
+@media (min-width: 768px) {
+  .faq-section {
+    max-width: 700px;
+    padding: 20px;
+  }
+  .faq-section h2 {
+      font-size: 28px;
+    }
+  .faq-question {
+    font-size: 18px;
+  }
+
+  .faq-answer {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+}
+
+/* Media queries for desktop view */
+@media (min-width: 1024px) {
+  .faq-section {
+    margin-top: 30px;
+    max-width: 800px;
+    padding: 25px;
+  }
+  .faq-section h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+  .faq-question {
+    font-size: 20px;
+  }
+
+  .faq-answer {
+    font-size: 18px;
+    padding-left: 25px;
+  }
+}
+
+/* Contact form section */
+.contact-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgb(228, 198, 23);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 100%;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-size: 14px;
+  color: #000000;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form button {
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: darkred;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: rgb(95, 13, 13);
+}
+
+
+/* Media queries for tablet view */
+@media (min-width: 768px) {
+  .contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  .contact-form h2 {
+    font-size: 28px;
+  }
+
+  .contact-form form {
+    gap: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+
+  .contact-form button {
+    font-size: 18px;
+    padding: 14px;
+  }
+}
+
+/* Media queries for desktop views */
+@media (min-width: 1024px) {
+  .contact-form {
+    padding: 40px;
+    margin: 20px auto;
+  }
+
+  .contact-form h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .contact-form button {
+    padding: 16px;
+    font-size: 20px;
+  }
+}
+
+
+

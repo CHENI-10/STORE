@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Consoles</title>
+    <link rel="icon" href="./image01/logo.png">
+    <link rel="stylesheet" href="./styles/style01.css">
+    <link rel="stylesheet" href="./styles/style02.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+    <body>
+    <!--Header Section-->
+    <header>
+      <nav>
+      <!--Image Logo for Navigation Bar-->
+      <div class="logo">
+      <img src="./image01/logo.png" alt="Logo">
+      </div>
+      <!--Hamburger Menu Icon displayed for mobile/tablet views-->
+      <input type="checkbox" id="check">
+      <label for="check"> ☰ </label> 
+      <!--Main Navigation Bar-->
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="upcomimg_games.html">Upcoming Games</a></li>
+          <!--Hardware Dropdown-->
+          <li class="dropdown">
+              <input type="checkbox" id="hardware-toggle">
+              <label for="hardware-toggle" class="dropdown-label active">Hardware ▾</label>
+              <ul class="dropdown-menu">
+                  <li><a href="consoles.html">Consoles</a></li>
+                  <li><a href="peripherals.html">Peripherals</a></li>
+              </ul>
+          </li>
+          <li><a href="games.html">Games</a></li>
+          <!--Shop Dropdown-->
+          <li class="dropdown">
+              <input type="checkbox" id="shop-toggle">
+              <label for="shop-toggle" class="dropdown-label">Shop ▾</label>
+              <ul class="dropdown-menu">
+                  <li><a href="order.html">Add to Order</a></li>
+                  <li><a href="checkout.html">Checkout</a></li>
+              </ul>
+          </li>
+          <li><a href="FAQs.html">Help Center</a></li>
+      </ul>
+      </nav>
+  </header>
+
+        <main class="consoles">
+        <h2><u>Gaming Consoles</u></h2>
+        
+        <!--Gaming Consoles arranged via a Grid-->
+        <div class="console-grid">
+          
+          <!-- Console 1 -->
+          <div class="console-item">
+            <img src="./image02/PS5_Pro.jpeg" alt="Sony PlayStation 5 Pro">
+            <div class="console-price">$699.00</div>
+            <div class="console-description"><p><strong>Sony PlayStation 5 Pro: </strong><br> The PlayStation 5 Pro delivers the best performance of any PS5 model, but the visual benefits it provides might be hard to spot if you're too far away from your TV.</p></div>
+          </div>
+          
+          <!-- Console 2 -->
+          <div class="console-item">
+            <img src="./image02/Xbox_X.jpeg" alt="Microsoft Xbox Series X">
+            <div class="console-price">$629.54</div>
+            <div class="console-description"><p><strong>Microsoft Xbox Series X:</strong><br> Get the Series X if you'll use it with a 4K TV (now or eventually), wanting the absolute best in graphics like raytraced lighting effects, or if you want a disc drive for games and movies.</p></div>
+          </div>
+          
+          <!-- Console 3 -->
+           <div class="console-item">
+            <img src="./image02/PS5_Slim.jpeg" alt="Sony PlayStation 5 Slim">
+            <div class="console-price">$470.45</div>
+            <div class="console-description"> <p> <strong> Sony PlayStation 5 Slim: </strong><br> This version of the PS5 has a disc drive, so you can watch UHD Blu-ray movies, as well as play new or used PS5 and PS4 game discs. The rest of the features and hardware are the same. </p> </div>
+           </div>
+          
+           <!-- Console 4 -->
+          <div class="console-item">
+            <img src="./image02/Xbox_S.jpeg" alt="Microsoft Xbox Series S">
+            <div class="console-price">$299.89</div>
+            <div class="console-description"><p><strong>Microsoft Xbox Series S:</strong><br> It is designed to deliver next-gen performance at a more affordable price point compared to its counterpart, the Xbox Series X. </p></div>
+          </div>
+          
+          <!-- Console 5 -->
+          <div class="console-item">
+            <img src="./image02/Nintendo_Lite.png" alt="Nintendo Switch Lite">
+            <div class="console-price">$199.00</div>
+            <div class="console-description"><p><strong>Nintendo Switch Lite:</strong><br> The Switch Lite is smaller and lighter, but its lack of TV support means you can't play multiplayer games with family or friends on the couch.</p></div>
+          </div>
+          
+          <!-- Console 6 -->
+          <div class="console-item">
+            <img src="./image02/Nintendo_OLED.jpg" alt="Nintendo Switch OLED Model">
+            <div class="console-price">$372.25</div>
+            <div class="console-description"><p><strong>Nintendo Switch OLED Model:</strong> <br>The Switch OLED Model has a beautiful screen and other improvements that make it worth the extra money, but it's probably not the best option for younger kids.</p></div>
+          </div>
+          
+          <!-- Console 7 -->
+          <div class="console-item">
+            <img src="./image02/Steam_LCD.jpeg" alt="Steam Deck LCD">
+            <div class="console-price">$398.55</div>
+            <div class="console-description"><p><strong>Steam Deck LCD:</strong><br> It offers the best interface, reliable performance and fantastic battery life for a great price, all of which make it an excellent console for beginners.</p></div>
+          </div>
+          
+          <!-- Console 8 -->
+          <div class="console-item">
+            <img src="./image02/PS4_Pro.jpg" alt="Sony PlayStation 4 Pro" class="image9">
+            <div class="console-price">$268.56</div>
+            <div class="console-description"><p><strong>Sony Playstation 4 Pro: </strong><br> It is designed to offer better performance, improved visuals and support for higher-resolution gaming</p></div>
+          </div>
+          
+          <!-- Console 9 -->
+          <div class="console-item">
+            <img src="./image02/Steam_OLED.jpeg" alt="Steam Deck OLED">
+            <div class="console-price">$549.00</div>
+            <div class="console-description"><p><strong>Steam Deck OLED:</strong><br>If you love your Steam Deck and want a better screen, or if contrast and more storage are important to you, the OLED version of the Steam Deck is a solid upgrade option.</p></div>
+          </div>
+          
+        </div>
+        </main>
+      
+         <!--Footer Section-->
+          <footer class="gaming-footer">
+          <div class="footer-top">
+            
+          <!--Social Media Links-->
+          <div class="footer-social">
+          <h4>Follow Us!</h4>
+            <a href="https://instagram.com" target="_blank"><img src="./image01/insta_logo.webp" alt="Instagram Logo"></a>
+            <a href="https://facebook.com" target="_blank"><img src="./image01/fb_logo.webp" alt="Facebook Logo"></a>
+            <a href="https://youtube.com" target="_blank"><img src="./image01/utube_logo.webp" alt="YouTube Logo"></a>
+            <a href="https://business.whatsapp.com" target="_blank"><img src="./image01/whatsapp_logo.webp" alt="Whatsapp Business Logo"></a>
+          </div>
+        
+          <!--Subscription Form-->
+          <div class="footer-subscription">
+          <h4>Join the Adventure!</h4>
+            <p>Subscribe for the latest game releases, updates and exclusive content.</p>
+            <form>
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        
+          <!-- Quick Links -->
+          <div class="footer-links">
+          <h4>Quick Links!</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="upcomimg_games.html">Upcoming Games</a></li>
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="peripherals.html">Peripherals</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="order.html">Add to Order</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="FAQs.html">Help Center</a></li>
+              </ul>
+          </div>
+          </div>
+        
+          <hr>
+          
+          <!--Copyright and Legal Links-->
+          <div class="footer-copyright">
+            <p>&copy; 2025 EpicLootStore. All Rights Reserved. <br><br> | 
+            <a href="https://www.epicgames.com/site/en-US/privacypolicy" target="_blank"> Privacy Policy</a> | <a href="https://www.epicgames.com/site/en-US/tos" target="_blank"> Terms & Conditions</a> |</p>
+          </div>
+      </footer>
+                
+  </body>
+  </html>
+          
+  
+  
+  
+ 
+
+
+
+        

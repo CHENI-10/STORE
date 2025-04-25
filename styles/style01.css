@@ -1,0 +1,378 @@
+/* CSS styles for the header and the footer of the website, for home page, about us page, upcoming games page, gaming consoles page, gaming peripherals page, games page and FAQs page, styled in a mobile first approach */
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #d2122E;
+    z-index: 100;
+}
+
+/* Main Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    height: 90px;
+    position: relative;
+}
+
+/* Logo */
+.logo img {
+    max-width: 120px;
+    z-index: 10;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+/* Hamburger Menu */
+#check {
+    display: none;
+}
+
+label[for="check"] {
+    font-size: 35px;
+    color: whitesmoke;
+    cursor: pointer;
+    display: none;
+    z-index: 101;
+    margin-right: 10px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 10px 10px;
+    position: relative;
+}
+
+.nav-links a,
+.dropdown-label {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.5s;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.nav-links a.active,
+.nav-links a:hover,
+.dropdown-label:hover {
+    color: gold;
+}
+
+/* Dropdown Styles */
+.dropdown input[type="checkbox"] {
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 150px;
+    border-radius: 5px;
+    z-index: 99;
+    padding: 0; /* Remove extra padding */
+    margin: 0;  /* Remove extra margin */
+}
+
+.dropdown-menu li {
+    padding: 5px 0; /* Reduce padding */
+}
+
+.dropdown-menu a {
+    color: white;
+    font-size: 15px;
+    padding: 8px 10px;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.dropdown-menu a:hover {
+    background-color: #0f0e0e;
+    color: gold;
+}
+
+/* Show dropdown on hover - desktop only */
+@media screen and (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+    }
+
+    .nav-links a,
+    .dropdown-label {
+        font-size: 18px;
+    }
+    .dropdown-menu a {
+        font-size: 16px; /* or 13px, 12px depending on your preference */
+        padding: 5px 10px;
+      }
+      .dropdown-label.active {
+        color: gold; /* match your active link color */
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    label[for="check"] {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        flex-direction: column;
+        display: none;
+        text-align: left;
+        z-index: 99;
+        line-height: 1.5;
+        margin: 0; /* remove spacing */
+        padding: 0; /* remove spacing */
+    }
+
+    #check:checked + label + .nav-links {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 15px;
+    }
+
+    .nav-links a.active,
+    .nav-links a:hover,
+    .dropdown-label:hover {
+        font-size: 18px;
+        color: red;
+    }
+
+    .dropdown input[type="checkbox"]:checked ~ .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu {
+        position: static;
+        background-color:black;
+        margin-left: 45px; /* Remove margin for mobile */
+        min-width: unset;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    /* Tighten up each item in the dropdown */
+.dropdown-menu li {
+    padding: 4px 0;
+}
+
+
+    .dropdown-menu a {
+        font-size: 16px;
+        padding: 10px; /* Ensure consistent padding */
+    }
+   
+}
+
+
+
+
+
+  
+/* Footer Section */
+.gaming-footer {
+    background-color: #1f2323;
+    color: #f1f1f1;
+    padding: 20px 15px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* Footer Top Section (Social media links, subscription form and quick links) */
+.footer-top {
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Section Titles */
+.footer-social h4,
+.footer-subscription h4,
+.footer-links h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(227, 37, 37);
+    margin-bottom: 10px;
+}
+
+/* Social Media Section */
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 8px;
+}
+
+.footer-social img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+    transform: scale(1.1);
+}
+
+/* Subscription Section */
+.footer-subscription {
+    margin-bottom: 20px;
+}
+
+.footer-subscription p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.footer-subscription input,
+.footer-subscription button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.footer-subscription button {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-subscription button:hover {
+    background-color: rgb(216, 0, 0);
+}
+
+/* Quick Links Section */
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 8px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-links a:hover {
+    color: gold;
+}
+
+/* Copyright Section */
+.footer-copyright p {
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 15px;
+}
+
+.footer-copyright a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-copyright a:hover {
+    color: #ff4500;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (min-width: 600px) {
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-social,
+    .footer-subscription,
+    .footer-links {
+        flex: 1;
+    }
+
+    .footer-subscription input,
+    .footer-subscription button {
+        width: auto;
+    }
+
+    .footer-social {
+        margin-right: 20px;
+    }
+
+    .footer-subscription {
+        margin: 0 10px;
+    }
+
+    .footer-links {
+        margin-left: 20px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+    .footer-social h4,
+    .footer-subscription h4,
+    .footer-links h4 {
+        font-size: 22px;
+    }
+
+    .footer-subscription input,
+    .footer-subscription button {
+        width: 250px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+}

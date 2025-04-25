@@ -1,0 +1,198 @@
+/* Order page */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color:white;
+}
+
+h2{
+  text-align: center;
+  padding: 20px;
+  color: yellow; 
+  margin-top: 10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 10px;
+}
+
+  h3 {
+  color: #f1732f; 
+  margin-bottom: 15px;
+  margin-left:25px;
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+h4 {
+  margin: 0.5rem 0;
+  color:red; 
+  font-size: large;
+}
+
+.category {
+  margin-bottom: 60px;
+}
+
+
+/* New wrapper for products inside each category */
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Individual Product Card */
+.product {
+  background-color: rgb(35, 33, 33); 
+  border: 3px solid #fbc02d; 
+  border-radius: 12px;
+  padding: 1rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+/* Product Image */
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* Quantity Input and Button */
+.quantity-input {
+  width: 60px;
+  padding: 0.3rem;
+  margin: 0.5rem;
+  border: 1px solid #ff8f00;
+  border-radius: 5px;
+}
+
+.product button {
+  background-color: #ff5722; 
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.product button:hover {
+  background-color:rgb(255, 60, 0); 
+}
+
+/* Order Summary Table */
+#order-summary {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#order-summary th,
+#order-summary td {
+  border: 1.5px solid #ec930d;
+  padding: 0.75rem;
+  text-align: center;
+  color: gold
+}
+
+#order-summary th {
+  background-color: #640202f5;
+  color: white;
+}
+
+#order-summary tfoot td {
+  font-weight: bold;
+  background-color:  #640202f5;
+  color:white;
+}
+
+/* Actions Section */
+.actions {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.actions button {
+  background: linear-gradient(to right, red, orange);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin: 5px;
+}
+
+
+@media (min-width: 768px) {
+  .actions {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .actions button{
+    margin-bottom: 30px;
+  }
+}
+
+/* Delete Icon */
+.delete-icon {
+  cursor: pointer;
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 0.8;
+  width: 30px;
+  height: 30px;
+}
+
+.delete-icon:hover {
+  opacity: 1;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.quantity-controls button {
+  background-color: greenyellow;
+  border: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 4px;
+}
+.quantity-controls button:hover {
+  background-color:lawngreen;
+}
+
